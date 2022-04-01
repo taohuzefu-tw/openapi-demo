@@ -131,6 +131,11 @@ paths:
               - available
               - pending
               - sold
+        - schema:
+            type: string
+          in: header
+          name: test
+          description: This is for testing
       responses:
         '200':
           description: successful operation
