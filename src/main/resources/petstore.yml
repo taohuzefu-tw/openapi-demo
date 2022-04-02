@@ -152,6 +152,8 @@ paths:
                   $ref: '#/components/schemas/Pet'
         '400':
           description: Invalid status value
+        '404':
+          description: Not Found Pet
       security:
         - petstore_auth:
             - 'write:pets'
@@ -189,6 +191,13 @@ paths:
                   $ref: '#/components/schemas/Pet'
         '400':
           description: Invalid tag value
+        '404':
+          description: Not Found Pet
+          content:
+            application/json:
+              schema:
+                type: object
+                properties: {}
       security:
         - petstore_auth:
             - 'write:pets'
