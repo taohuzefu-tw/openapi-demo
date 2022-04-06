@@ -154,6 +154,8 @@ paths:
           description: Invalid status value
         '404':
           description: Not Found Pet
+        '500':
+          description: Add new error code for testing
       security:
         - petstore_auth:
             - 'write:pets'
