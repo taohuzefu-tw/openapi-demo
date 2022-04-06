@@ -36,3 +36,5 @@ To run the demo using docker, invoke the following:
 ```sh
 docker run --rm -p 8080:8081 springdoc-openapi-spring-boot-2-webmvc:3.1.6-SNAPSHOT
 ```
+
+
